@@ -1,5 +1,6 @@
-module "eks-module" {  
-  source         = "github.com/lily4499/terraform-aws-eksmodule?ref=v1.0.0"  
+module "eks-module" { 
+  source         = "lily4499/eksmodule/aws"
+  version        = "1.0.0" 
   region         = "us-east-1"   #Enter your Providers region here  
   vpc_cidr       = "10.0.0.0/16"  
   dns_hostnames  = true  
